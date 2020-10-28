@@ -7,8 +7,8 @@ import datetime
 
 # All data is collected based on past \query_size\ submissions/comments
 ########## DATASET STRUCTURE #############
-# subreddit_name | number_of_posts_removed_by_mod | submissions_containing_toxic_words | comments_containing_toxic_words | nfsw_submissions | locked_submissions | original_submissions | subreddit_subscribers | repeat_
-# aww            | 10                             | 2                                  | 10
+# subreddit_name | number_of_posts_removed_by_mod | submissions_containing_toxic_words | comments_containing_toxic_words | nfsw_submissions | locked_submissions | original_submissions | subreddit_subscribers | repeat_top_voted_users
+# aww            | 10                             | 2                                  | 10                              | 0                | 2                  | 3                    | 5                     | 2
 ##########################################
 
 # Size of reddit query
