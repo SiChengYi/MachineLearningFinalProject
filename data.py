@@ -143,7 +143,9 @@ subreddits = {
     'mechanical_gifs': 0,
     'art': 0,
     'baking': 0,
-    'dadjokes': 0
+    'dadjokes': 0,
+    'smashbrosultimate': 0,
+    'deeprockgalactic': 0
 }
 
 all_data = []
