@@ -13,7 +13,7 @@ import datetime
 ##########################################
 
 # data_columns = ['subreddit_name', 'submission_titles_containing_toxic_words', 'submissions_containing_toxic_words',
-#                 'total_submissions_score', 'total_comments_score', 'comments_containing_toxic_words', 'subscribers', 'repeat_top_voted_users']
+#                 'total_submissions_score', 'total_comments_score', 'comments_containing_toxic_words', 'subscribers']
 data_columns = [
     'subreddit_name',
     'subscribers',
