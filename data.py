@@ -182,7 +182,7 @@ subreddits = {
     'smashbrosultimate': 0,
     'datascience': 0,
     'persona5': 0,
-    'doctorwho':0,
+    'doctorwho': 0,
     'deeprockgalactic': 0,
     'diy': 0,
     'machinelearning': 0,
@@ -200,9 +200,9 @@ def getSubmissionData(sub, query_params={}):
     url = base_url + 'submission/?subreddit=' + \
         sub + '&mod_removed=false&after=2020-10-01&before=2020-10-27&size=' + \
         str(query_size)
-    for param in query_params:
-        ''' Add all requested query params to url '''
-        url = url + '&' + param + '=' + str(query_params[param])
+    # for param in query_params:
+    #     ''' Add all requested query params to url '''
+    #     url = url + '&' + param + '=' + str(query_params[param])
     print('URL ', url)
     r = requests.get(url)
     data = json.loads(r.text)
@@ -213,9 +213,9 @@ def getCommentData(sub, query_params=[]):
     url = base_url + 'comment/?subreddit=' + sub + \
         '&mod_removed=false&after=2020-10-01&before=2020-10-27&size=' + \
         str(query_size)
-    for param in query_params:
-        ''' Add all requested query params to url '''
-        url = url + '&' + param + '=' + str(query_params[param])
+    # for param in query_params:
+    #     ''' Add all requested query params to url '''
+    #     url = url + '&' + param + '=' + str(query_params[param])
     r = requests.get(url)
     data = json.loads(r.text)
     return data['data']
