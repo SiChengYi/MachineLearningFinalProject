@@ -8,7 +8,7 @@ import datetime
 # All data is collected based on past \query_size\ submissions/comments
 ########## DATASET STRUCTURE #############
 
-# subreddit_name | submission_titles_containing_toxic_words | submissions_containing_toxic_words | total_submissions_score | total_comments_score | comments_containing_toxic_words | subreddit_subscribers | repeat_top_voted_users
+  # subreddit_name | submission_titles_containing_toxic_words | submissions_containing_toxic_words | total_submissions_score | total_comments_score | comments_containing_toxic_words | subreddit_subscribers | repeat_top_voted_users
 
 ##########################################
 
