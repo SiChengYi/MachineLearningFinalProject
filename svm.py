@@ -10,7 +10,7 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix, accuracy_score
 
 ### CONSTANTS ######
-make_heatmap = False
+make_heatmap = True
 fine_grid_search = True
 make_mean_scatter = False
 ####################
@@ -22,6 +22,7 @@ warnings.warn = warn
 def plot_heatmap(df):
     plt.title("Correlation Matrix")
     sns.heatmap(df.corr())
+    plt.tight_layout()
     plt.show()
 
 # Load the data 
