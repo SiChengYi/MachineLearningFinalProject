@@ -34,11 +34,12 @@ clf = clf.fit(X_train, y_train)
 
 y_pred = clf.predict(X_test)
 
+# Making a visual of the tree
 fig, ax = plt.subplots(figsize=(20, 15))
 tree.plot_tree(clf, filled=True, fontsize=10, feature_names=features)
 plt.show()
 
+# Printing out the Scores 
 print("Accuracy: ", metrics.accuracy_score(y_test, y_pred))
 print('Confusion Matrix: ')
 print(confusion_matrix(y_test, y_pred))
-
