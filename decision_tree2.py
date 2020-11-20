@@ -16,7 +16,7 @@ col_names = ['subreddit_name', 'subscribers', 'submission_titles_containing_toxi
 data = pd.read_csv("data.csv")
 data = data.dropna()
 
-# Spliting the features and target 
+# Splitting the features and target 
 features = ['subscribers', 'submission_titles_containing_toxic_words',
                 'submissions_containing_toxic_words', 'total_submissions_score', 
                 'comments_containing_toxic_words', 'total_comments_score']
